@@ -9,7 +9,7 @@ terraform {
   } 
 }
 module "tahmid_dev"{
-    source="../../blueprints"
+    source="src/blueprints"
     vpc_cidr = "10.10.0.0/16"
     vpc_name = "tahmid-dev-vpc"
     availability_zones = ["ap-southeast-1a"]
@@ -18,6 +18,6 @@ module "tahmid_dev"{
         env="tahmid_dev"
         team="app"
         managed_by_tf=true
-        workspace="tahmid_dev"
+        workspace="tahmid-dev"
     }
 }
