@@ -12,7 +12,7 @@ variable "public_subnets" {
     type = list(string)
 }
 variable "custom_tag"  {
-    type = map()
+    type = map(string)
     default = {
     Terraform   = "true"
     Environment = "dev"
